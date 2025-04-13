@@ -65,6 +65,15 @@ body {
     color: #00ffcc;
   }
   
+/* 푸터 */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #202020;
+    color: #888;
+    font-size: 0.9rem;
+  }
+  
   body::before {
     content: "";
     position: fixed;
