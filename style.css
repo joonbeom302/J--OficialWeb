@@ -204,3 +204,36 @@ footer {
       transform: translate(-50%, -50%) scale(1);
     }
   }
+
+.footer {
+  background-color: #111827;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  border-top: 2px solid #1f2937;
+}
+
+.footer h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #00ffff;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(to right, #3b82f6, #ec4899);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.github-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+}
