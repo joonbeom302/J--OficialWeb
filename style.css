@@ -215,26 +215,59 @@ footer {
     border-top: 2px solid #1f2937;
   }
   
-  .footer h2 {
+  .footer-title {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     color: #00ffff;
-    animation: glow 3s ease-in-out infinite alternate;
+    text-shadow:
+      0 0 6px #00ffff,
+      0 0 10px #00ffff,
+      0 0 14px #00ffff;
+    animation: softGlow 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes softGlow {
+    0% {
+      text-shadow:
+        0 0 6px #00ffff,
+        0 0 10px #00ffff,
+        0 0 14px #00ffff;
+    }
+    50% {
+      text-shadow:
+        0 0 3px #00ffff,
+        0 0 6px #00ffff,
+        0 0 8px #00ffff;
+    }
+    100% {
+      text-shadow:
+        0 0 6px #00ffff,
+        0 0 10px #00ffff,
+        0 0 14px #00ffff;
+    }
   }
   
   .github-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
     background: linear-gradient(to right, #3b82f6, #ec4899);
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-weight: bold;
   }
   
   .github-link:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(236, 72, 153, 0.6);
+    box-shadow: 0 0 16px rgba(236, 72, 153, 0.6);
+  }
+  
+  .github-icon {
+    width: 24px;
+    height: 24px;
   }
