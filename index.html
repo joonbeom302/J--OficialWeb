@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J++ Official Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="title-container">
+        <div class="image-wrapper">
+            <div class="glow-circle"></div>
+            <img src="image.png" alt="J++ Logo" class="title-image">
+          </div>
+        <h1>J++ Official Web</h1>
+      </div>
+      
+      <p class="subtitle">Welcome to Korean Programming Language, 'J++'!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>🧾 소개</h2>
+      <p>j++은 2025년 04월 10일에 한국에서 개발된 한글 프로그래밍 언어입니다.</p>
+      <p>이 데브로그에는 j++의 기본 문법, 사용 방법이 쓰여 있습니다.</p>
+    </section>
+
+    <section>
+      <h2>📘 기본 문법</h2>
+      <ul>
+        <li>변수 선언, 초기화, 재할당 처리</li>
+        <li>입력</li>
+        <li>출력</li>
+        <li>주석</li>
+        <li>다른 기능들은 추후 추가될 예정입니다. (ex: 반복문, 함수 등..)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📌 1. 변수</h2>
+      <p>j++에는 세 가지 데이터 타입 [정수, 소수, 문자열]이 있습니다.</p>
+      <p>흔히 int, float, string이라고 부르죠.</p>
+      <p>변수 선언:<code>(데이터 타입) (변수명);</code></p>
+      <p>변수 재할당:<code>(변수명) = (값)</code></p>
+      <p>선언과 동시에 값을 넣을 수도 있습니다.</p>
+      <pre><code>정수 a = 10;</code></pre>
+      
+      <p>아래는 변수 선언의 예시 입니다.</p>
+<pre><code>정수 a;
+소수 b;
+문자열 c;
+
+정수 d = 10;
+문자열 e = "안녕!"
+
+a = 0;
+b = 3.14;</code></pre>
+    </section>
+
+    <section>
+      <h2>📥 2. 입력</h2>
+      <p><code>입력(입력 받을 변수명)</code>으로 입력을 받을 수 있습니다.</p>
+
+      <p>다음은 입력의 예시 입니다.</p>
+      <pre><code>정수 a;
+입력(a);</code></pre>
+<p>a에 입력한 값이 들어갑니다.</p>
+    </section>
+
+    <section>
+      <h2>📤 3. 출력</h2>
+      <p><code>출력("큰 따옴표로 묶은 문자열", 변수, {원하는 만큼 쓸 수 있음})</code>으로 출력을 할 수 있습니다.</p>
+      <p>메세지만 출력:<code>출력("Hello, J++!");</code></p>
+      <p>변수만 출력:<code>출력(변수명);</code></p>
+      <p>변수와 메세지 둘 다 출력:<code>정수 a = 10;
+출력("a의 값은 ", a, "입니다.");</code></p>
+
+
+      <h3>이스케이프 시퀀스</h3>
+      <ul>
+        <li>줄바꿈: \줄바꿈</li>
+        <li>탭: \탭</li>
+        <li>역슬래시(): \\</li>
+        <li>큰따옴표("): \"</li>
+        <li>작은따옴표('): \'</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>💬 4. 주석</h2>
+      <p>주석은 총 세 가지 종류가 있습니다.</p>
+      <ul>
+        <li><code>#</code>: #을 쓴 부분부터 그 줄의 끝까지 주석처리</li>
+        <p> </p>
+        <li><code>//</code>: //을 쓴 부분부터 그 줄의 끝까지 주석처리</li>
+        <p> </p>
+        <li><code>/* */</code>: /*를 쓴 부분부터 */를 쓴 부분까지 모두 주석처리(줄에 영향을 받지 않음)</li>
+        <p> </p>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🚀 사용 방법</h2>
+      <ol>
+        <li>j++ 파일을 실행시킬 폴더를 만든다.</li>
+        <li>폴더 속에 j++ 인터프리터 코드를 넣을 파이썬 파일을 생성한다.</li>
+        <li>j++파일을 생성한다.</li>
+        <li>터미널에 아래 코드를 입력한다.<code>python (인터프리터).py (j++파일).j++</code></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 All rights reserved by trigger302</p>
+  </footer>
+</body>
+</html>
